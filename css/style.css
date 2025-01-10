@@ -444,3 +444,49 @@ p {
     left: 0;
     z-index: 1; /* Ensure it's behind other content */
 }
+
+
+/* Clients section styles */
+.clients {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 6%;
+    padding-top: 8%;
+}
+
+.clients p {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.client-section .heading {
+    padding-bottom: 4%;
+}
+
+.client-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.logogrid {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    background-color: var(--client-bg-color);
+    border-radius: 10px;
+}
+.logogrid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.logogrid__img {
+    object-fit: cover;
+    max-width: 120px;
+}
+
