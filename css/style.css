@@ -602,7 +602,7 @@ label:after {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    background-color: var(--client-bg-color);
+    /* background-color: var(--client-bg-color); */
     border-radius: 10px;
 }
 .logogrid__item {
