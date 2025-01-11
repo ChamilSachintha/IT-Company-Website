@@ -1281,3 +1281,31 @@ main::after {
     100% {  transform: scale(1, .8) translateY(0); }
 }
 
+/* Scroll bar styles */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.thin::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--tertiary-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--main-color);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--main-color);
+}
+
+/* Popup scrollbar */
+.textarea-scrollbar {
+    margin: 0;
+    height: 575px;
+    width: auto;
+}
