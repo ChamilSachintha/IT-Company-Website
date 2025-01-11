@@ -335,7 +335,7 @@ p {
     color: var(--bg-color);
 }
 
-/* -------------- Section 2 styles -------------- */
+/* -------------- Services styles -------------- */
 .services {
     display: flex;
     height: 100vh;
@@ -348,12 +348,6 @@ p {
 
 .services p {
     text-align: justify;
-}
-
-.main-item {
-    font-size: 37px;
-    text-align: center;
-    color: var(--bg-color);
 }
 
 .main-item-container {
@@ -445,8 +439,7 @@ p {
     z-index: 1; /* Ensure it's behind other content */
 }
 
-
-/* Clients section styles */
+/* -------------- Clients styles -------------- */
 .clients {
     height: 100vh;
     justify-content: center;
@@ -490,3 +483,178 @@ p {
     max-width: 120px;
 }
 
+/* -------------- About Us styles -------------- */
+.aboutUs {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 6%;
+    padding-top: 4%;
+}
+
+.aboutUs .aboutUs-row {
+    display: flex;
+    gap: 5rem;
+}
+
+.aboutUs-row .aboutUs-column {
+    flex: 1 1 40rem;
+}
+
+.aboutUs-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.aboutUs-column .aboutUs-box {
+    border-left: 0.2rem solid var(--main-color);
+}
+
+.aboutUs-box .aboutUs-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.aboutUs-box .aboutUs-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.aboutUs-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    margin-bottom: 60px;
+}
+
+.aboutUs-content .content h3 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.aboutUs-content .content p {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    width: 410px;
+}
+
+/* Moving boxes */
+.box-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box {
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 7px;
+    width: 20%;
+    pad: 7px 20px;
+    z-index: 1;
+}
+
+.benefit-box {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    animation: move 5s infinite;
+    background-color: var(--bg-color);
+    width: 24%;
+    border: 2px solid var(--main-color);
+    border-radius: 7px;
+    padding: 7px 20px;
+    z-index: 1;
+}
+
+.box1 {
+    top: 14%;
+    left: 38%;
+    transform: translateX(-50%);
+}
+.box2 {
+    top: 22%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+.box3 {
+    bottom: 7%;
+    left: 38%;
+    transform: translateX(-50%);
+}
+.box4 {
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.box5 {
+    top: 22%;
+    left: 10%;
+}
+.box6 {
+    top: 59%;
+    right: 10%;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    background-color: var(--main-color);
+    transform-origin: 0 0;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: var(--main-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main-item {
+    font-size: 30px;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    text-align: left;
+    padding-top: 2px;
+    line-height: 23px;
+}
+.timeline-body > p + p {
+    margin-top: 5px;
+}
