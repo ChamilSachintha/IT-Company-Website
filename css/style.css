@@ -167,7 +167,7 @@ p {
 /* Color variables */
 :root {
     --bg-color: #ffffff;
-    --second-bg-color: #fff6f6;
+    --second-bg-color: #f0f7fd;
     --tertiary-bg-color: #fffbf5;
     --secondary-bg-opacity-color: rgba(0, 173, 239, 0.1);
     --shadow-color: rgba(32, 32, 32, 0.3);
@@ -205,6 +205,10 @@ p {
     align-items: center;
     z-index: 100;
     transition: 0.3s;
+}
+
+.header.sticky {
+    background: var(--second-bg-color);
 }
 
 .logo {
