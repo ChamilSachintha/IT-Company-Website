@@ -1073,6 +1073,7 @@ body.thin::-webkit-scrollbar {
 
   .navbar a {
     display: block;
+    width: 100%;
     font-size: 2rem;
     margin: 18px 0;
     transform: translateX(-20rem);
@@ -1098,16 +1099,16 @@ body.thin::-webkit-scrollbar {
 
   .home-content {
     width: 100%;
-    margin-top: 30%;
+    margin-top: 32%;
     text-align: center;
   }
 
   .home-content h1 {
-    font-size: 32px;
+    font-size: 42px;
   }
 
   .home-content span {
-    font-size: 35px;
+    font-size: 42px;
   }
 
   .home-content p {
@@ -1138,6 +1139,11 @@ body.thin::-webkit-scrollbar {
   /* Services section */
   .services {
     padding: 2rem 5%;
+    margin-top: 42%;
+  }
+
+  .services p {
+    text-align: center;
   }
 
   .p-container {
@@ -1146,6 +1152,7 @@ body.thin::-webkit-scrollbar {
 
   .box-container {
     display: grid;
+    padding-top: 12%;
   }
 
   .benefit-box {
@@ -1163,14 +1170,18 @@ body.thin::-webkit-scrollbar {
   }
 
   .services .heading {
-    padding-bottom: 6%;
+    /* padding-bottom: 6%; */
   }
 
   .services .heading {
-    padding-top: 25%;
+    /* padding-top: 90%; */
   }
 
-  /* Client section */
+  /* Clients section */
+.clients {
+  margin-top: 50%;
+}
+
   .circular-img-outer-container {
     display: block;
   }
@@ -1200,7 +1211,23 @@ body.thin::-webkit-scrollbar {
     margin-top: 17%;
   }
 
-  /* Contact section */
+  /* About Us section */
+  .aboutUs {
+    /* margin-top: 15%; */
+  }
+  .aboutUs p {
+    text-align: center;
+  }
+
+  .timeline-body p {
+    text-align: justify;
+  }
+
+
+  /* Contact Us section */
+  .contact {
+    margin-top: 25%;
+  } 
   .contact-wrapper {
     display: grid;
     margin: 0;
@@ -1208,6 +1235,7 @@ body.thin::-webkit-scrollbar {
 
   .contact-container {
     width: auto;
+    padding-top: 12%;
     margin-left: 10%;
   }
 
@@ -1220,7 +1248,6 @@ body.thin::-webkit-scrollbar {
   }
 
   .contact .heading {
-    padding-bottom: 14%;
     margin-top: 25%;
   }
 
@@ -1250,8 +1277,20 @@ body.thin::-webkit-scrollbar {
 @media (max-width: 462px) {
   .services {
     padding: 10rem 4% 5rem 5%;
+    margin-top: 35%;
   }
 
+  .clients {
+    /* margin-top: 78%; */
+  }
+
+  .aboutUs {
+    /* margin-top: 158%; */
+  }
+
+  .contact {
+    /* margin-top: 68%; */
+  }
   .contact form .input-box .input-field {
     width: 100%;
   }
@@ -1276,5 +1315,19 @@ body.thin::-webkit-scrollbar {
     align-items: center;
     flex-direction: column;
     text-align: center;
+  }
+ 
+  .services {
+    margin-top: 42%;
+  }
+  .clients {
+    margin-top: 52%;
+  }
+  .aboutUs {
+    margin-top: 23%;
+  }
+
+  .contact {
+    margin-top: 35%;
   }
 }
