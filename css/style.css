@@ -1364,10 +1364,26 @@ body.thin::-webkit-scrollbar {
     margin-top: 52%;
   }
   .aboutUs {
-    margin-top: 23%;
+    margin-top: 40%;
   }
 
   .contact {
     margin-top: 35%;
+  }
+}
+
+
+@media (max-width: 359px) {
+  .services {
+    margin-top: 75%;
+  }
+  .clients {
+    margin-top: 75%;
+  }
+  .aboutUs {
+    margin-top: 160%;
+  }
+  .contact {
+    margin-top: 95%;
   }
 }
