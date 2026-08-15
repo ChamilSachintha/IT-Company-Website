@@ -771,6 +771,17 @@ footer p {
   font-size: 1.1em;
 }
 
+footer p a {
+  color: var(--white);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+footer p a:hover {
+  color: var(--secondary-color);
+}
+
+
 .footer-navbar a {
   font-size: 1.7rem;
   color: var(--white);
