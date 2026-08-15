@@ -4,12 +4,12 @@ function setTheme(mode) {
     if (mode === "dark") {
         document.body.classList.add("dark-theme");
         document.body.classList.remove("light-theme");
-        bgImage.src = "images/bg-dark.png";
+        bgImage.src = "images/bg-dark.webp";
         document.getElementById("darkmode-toggle").checked = true;
     } else {
         document.body.classList.add("light-theme");
         document.body.classList.remove("dark-theme");
-        bgImage.src = "images/bg-light.png"; 
+        bgImage.src = "images/bg-light.webp"; 
         document.getElementById("darkmode-toggle").checked = false;
     }
 }
@@ -20,11 +20,11 @@ function toggleTheme() {
     const bgImage = document.querySelector(".background-image");
     if (isDarkMode) {
         document.body.classList.remove("light-theme");
-        bgImage.src = "images/bg-dark.png"; // Dark mode background image
+        bgImage.src = "images/bg-dark.webp"; // Dark mode background image
         localStorage.setItem("theme", "dark");
     } else {
         document.body.classList.add("light-theme");
-        bgImage.src = "images/bg-light.png"; // Light mode background image
+        bgImage.src = "images/bg-light.webp"; // Light mode background image
         localStorage.setItem("theme", "light");
     }
 }
